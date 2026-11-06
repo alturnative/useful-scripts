@@ -18,7 +18,7 @@ if (-not $Adapter -and -not $Setting) {
     Write-Host ""
     Write-Host "Usage:"
     Write-Host "  .\$currentFile <adapter> Dhcp"
-    Write-Host "  .\$currentFile <adapter> <IPv4 address>"
+    Write-Host "  .\$currentFile <adapter> <IPv4 address> [net mask] [gateway]"
     Write-Host ""
     Write-Host "Available network interfaces:"
     Get-NetAdapter | Format-Table Name, Status, InterfaceDescription -AutoSize
